@@ -3,7 +3,7 @@
 Plugin Name: CSS & JS Collector and Minifier
 Description: Collects and minifies all CSS and JS files in theme directory
 Version: 1.2
-Author: Your Name
+Author: Natilos.ir
 */
 
 class CSS_JS_Minifier {
@@ -11,7 +11,7 @@ class CSS_JS_Minifier {
     private $output_path;
 
     public function __construct() {
-        $this->theme_path = get_template_directory();
+        $this->theme_path  = get_template_directory();
         $this->output_path = $this->theme_path . '/assets/';
 
         // Create output directory if it doesn't exist
